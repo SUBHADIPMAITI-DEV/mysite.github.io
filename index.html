@@ -16,7 +16,12 @@
     <title>Subhadip Maiti</title>
     <link rel="icon" href="./Assets/Image/sm.jpg" type="image/jpg" />
 </head>
-<body>
+<body onload="myfun()" >
+<!--LOADER START-->
+<div id="loading" >
+    
+</div>
+<!--LOADER END-->
     <!--Start Header-->
     <div class="header" id="topheader">
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -568,6 +573,11 @@
             function topFunction() {
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
+            }
+
+            var perloader = document.getElementById('loading');
+            function myfun(){
+                perloader.style.display='none';
             }
 
         </script>
